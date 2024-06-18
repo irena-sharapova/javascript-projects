@@ -12,7 +12,7 @@ let maximumMassLimit = 850000;
 let fuelTempCelsius	= -225;
 let minimumFuelTemp	= -300;
 let maximumFuelTemp = -150;
-let fuelLevel = "100%";
+let fuelLevel = 100;
 let weatherStatus = "clear";
 let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
@@ -44,7 +44,7 @@ if (fuelTempCelsius <= -300 || fuelTempCelsius <= -150) {
     preparedForLiftOff = false;
 }
 // add logic below to verify the fuel level is at 100%
-if (fuelLevel === "100%") {
+if (fuelLevel === 100) {
     console.log("Fuel level is good");
 } else {
     console.log ("Error Fuel level is not good");
@@ -65,11 +65,11 @@ if (preparedForLiftOff = false){
     console.log ("Date:", date);
     console.log ("Time:", time);
     console.log ("Austronaut count:", astronautCount);
-    console.log ("Crew mass:", crewMassKg);
-    console.log ("Fuel mass:", fuelMassKg);
-    console.log ("Shuttle mass:", shuttleMassKg);
-    console.log ("Total mass", totalMassKg);
-    console.log ("Fuel Temperature", fuelTempCelsius);
+    console.log ("Crew mass:", crewMassKg, "kg");
+    console.log ("Fuel mass:", fuelMassKg, "kg");
+    console.log ("Shuttle mass:", shuttleMassKg, "kg");
+    console.log ("Total mass", totalMassKg, "kg");
+    console.log ("Fuel Temperature", fuelTempCelsius, "C");
     console.log ("Wether Status:", weatherStatus);
     console.log ("Wish you a safe flight Austronautus");
 }
