@@ -41,10 +41,12 @@ function askForNumber() {
 }
 
 
-function generatePassword(password1, password2) {
+function generatePassword(string1, string2) {
   let code = '';
-  //let password1 = [];
-  //let password2 = [];
+  for (let i = 0; i < string1.length; i++) {
+    code += string1[i] + string2[i];
+  }
+  
   //password1 = input.question("Give first part of Password");
   //password2 = input.question("Give first part of Password");
   /// Code your Bonus Mission Solution here ///
@@ -73,10 +75,10 @@ function runProgram() {
     /// TEST PART C HERE ///
   /// UNCOMMENT the remaining commented lines and change the password1 and password2 strings to ensure your code is doing its job ///
 
-  // let password1 = '';
-  // let password2 = '';
-  // console.log("Time to run the password generator so we can update the menu tomorrow.")
-  // console.log(`The new password is: ${generatePassword(password1, password2)}`);
+  let string1 = 'ABCDEF';
+  let string2 = 'notyet';
+   console.log("Time to run the password generator so we can update the menu tomorrow.");
+   console.log(`The new password is: ${generatePassword(string1, string2)}`);
 }
 
 module.exports = {
