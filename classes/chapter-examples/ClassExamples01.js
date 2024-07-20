@@ -8,6 +8,11 @@ class Astronaut {
 }
 
 let fox = new Astronaut('Fox', 7, 12);
+let hippo = new Astronaut('Hippo', 25, 1500);
+
+console.log(typeof hippo, typeof fox);
+console.log(hippo, fox);
+
 
 console.log(fox);
 console.log(fox.age, fox.color);
